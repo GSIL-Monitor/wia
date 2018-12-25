@@ -1,0 +1,31 @@
+server:
+  port: 8888
+  tomcat:
+    uri-encoding: UTF-8
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always  
+spring:
+  application:
+    name: hr-client
+  http:
+    encoding:
+      charset:  utf8
+      force: true
+      enabled: true
+
+  datasource:
+    #hr数据源
+    source1:
+      url: jdbc:mysql://localhost:3306/wia
+      username: root
+      password: raopeng0514
+      driver-class-name: com.mysql.jdbc.Driver
+
+
+
